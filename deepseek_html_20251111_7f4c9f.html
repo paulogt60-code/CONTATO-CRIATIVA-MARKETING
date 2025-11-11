@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entre em Contato</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(to right, #25D366, #128C7E);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .intro {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .intro h2 {
+            color: #2575fc;
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+        }
+        
+        .intro p {
+            color: #666;
+            line-height: 1.6;
+            font-size: 1.1rem;
+        }
+        
+        .contact-options {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .contact-card {
+            flex: 1;
+            min-width: 250px;
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .contact-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .whatsapp {
+            border-top: 5px solid #25D366;
+        }
+        
+        .instagram {
+            border-top: 5px solid #E1306C;
+        }
+        
+        .icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        
+        .whatsapp .icon {
+            color: #25D366;
+        }
+        
+        .instagram .icon {
+            color: #E1306C;
+        }
+        
+        .contact-card h3 {
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+            color: #333;
+        }
+        
+        .contact-card p {
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        
+        .btn-whatsapp {
+            background-color: #25D366;
+            color: white;
+        }
+        
+        .btn-whatsapp:hover {
+            background-color: #128C7E;
+            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
+        }
+        
+        .btn-instagram {
+            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+            color: white;
+        }
+        
+        .btn-instagram:hover {
+            box-shadow: 0 5px 15px rgba(225, 48, 108, 0.4);
+            transform: scale(1.05);
+        }
+        
+        .additional-info {
+            background-color: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+        }
+        
+        .additional-info h3 {
+            color: #2575fc;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        
+        .additional-info p {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 0.9rem;
+            border-top: 1px solid #eee;
+        }
+        
+        @media (max-width: 768px) {
+            .contact-options {
+                flex-direction: column;
+            }
+            
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            .content {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Entre em Contato</h1>
+            <p>Estamos aqui para ajudar! Escolha a melhor forma de contato.</p>
+        </header>
+        
+        <div class="content">
+            <div class="intro">
+                <h2>Fale Conosco</h2>
+                <p>Queremos ouvir você! Entre em contato através do WhatsApp para um atendimento rápido ou nos siga no Instagram para ficar por dentro das novidades.</p>
+            </div>
+            
+            <div class="contact-options">
+                <div class="contact-card whatsapp">
+                    <div class="icon">📱</div>
+                    <h3>WhatsApp</h3>
+                    <p>Converse conosco diretamente pelo WhatsApp. Respondemos rapidamente!</p>
+                    <a href="https://wa.me/5577998665505?text=Olá! Gostaria de mais informações." class="btn btn-whatsapp" target="_blank">Enviar Mensagem</a>
+                </div>
+                
+                <div class="contact-card instagram">
+                    <div class="icon">📸</div>
+                    <h3>Instagram</h3>
+                    <p>Siga-nos no Instagram e acompanhe nosso trabalho, novidades e promoções.</p>
+                    <a href="https://www.instagram.com/agenciacriativamarketing" class="btn btn-instagram" target="_blank">Seguir no Instagram</a>
+                </div>
+            </div>
+            
+            <div class="additional-info">
+                <h3>Horário de Atendimento</h3>
+                <p>Segunda a Sexta: 8h às 18h<br>
+                Sábados: 8h às 13h<br>
+                Respondemos o WhatsApp em até 1 hora útil.</p>
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 2023 Todos os direitos reservados</p>
+        </footer>
+    </div>
+
+    <script>
+        // Adicionando interatividade aos botões
+        document.addEventListener('DOMContentLoaded', function() {
+            const buttons = document.querySelectorAll('.btn');
+            
+            buttons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Efeito de clique
+                    this.style.transform = 'scale(0.95)';
+                    setTimeout(() => {
+                        this.style.transform = '';
+                    }, 200);
+                    
+                    // Aqui você pode adicionar tracking de cliques se necessário
+                    console.log(`Botão ${this.textContent} clicado`);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
